@@ -1,6 +1,6 @@
 # Bloomberg Connects Exporter
 
-This exports data from the HAM APIs to the Bloomberg Connects (BC) bulk upload format.
+This exports data from the HAM APIs to the [Bloomberg Connects (BC)](https://www.bloombergconnects.org/) bulk upload format.
 
 The script currently fetches and processes: 
 * All current exhibitions
@@ -37,5 +37,7 @@ Some IDs are amended in order to enforce uniqueness across data sources.
 ## Setup 
 
 Create a venv: `virtualenv venv`  
-Install dependencies: `pip install -r requirements.txt`
+Install dependencies: `pip install -r requirements.txt`  
+Copy .env_template to .env  
+Edit .env, set HAM_API_KEY to your own API key ([get one here](https://hvrd.art/api))
 
